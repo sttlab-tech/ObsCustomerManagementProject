@@ -76,6 +76,24 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/customer1;4;0;project.obscustomermanagement.documenttypes:ObsCustomer/engagedParty;2;0/id;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">11</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/customer1;4;0;project.obscustomermanagement.documenttypes:ObsCustomer/engagedParty;2;0/name;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">Test party</value>
+</Values>
+</DATA>
+</MAPSET>
 </MAP>
 
 <MAP TIMEOUT="" MODE="STANDALONE">
