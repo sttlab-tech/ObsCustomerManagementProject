@@ -66,7 +66,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">stephane.tailland@ibm.com</value>
-    <value name="lastModifiedDate">1744977177616</value>
+    <value name="lastModifiedDate">1744977311592</value>
     <value name="displayName">getCustomers</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -171,6 +171,51 @@
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">3</number>
       </record>
+      <record name="/3" javaclass="com.wm.util.Values">
+        <value name="name">REPEATINPUTOUTPUT</value>
+        <value name="itemType">CONTROLS</value>
+        <record name="in_array" javaclass="com.wm.util.Values">
+          <value name="name">/selectCustomersOutput/results</value>
+          <value name="type">record</value>
+          <value name="dim">1</value>
+          <Boolean name="isLink">false</Boolean>
+          <value name="field_name">results</value>
+          <null name="wrapper_type"/>
+        </record>
+        <record name="out_array" javaclass="com.wm.util.Values">
+          <value name="name">/customers</value>
+          <value name="type">recref</value>
+          <value name="dim">1</value>
+          <value name="rec_ref">project.obscustomermanagement.documenttypes:ObsCustomer</value>
+          <Boolean name="isLink">false</Boolean>
+          <value name="field_name">customers</value>
+          <null name="wrapper_type"/>
+        </record>
+        <value name="nodePathNew">3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
+      </record>
+      <record name="/3/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">5</number>
+        <value name="nodePathNew">3.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">5</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+      </record>
+      <null name="/3/0/0"/>
+      <null name="/3/0/1"/>
+      <null name="/3/0/2"/>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>
