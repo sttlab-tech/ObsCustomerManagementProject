@@ -48,6 +48,10 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2040
+- serviceName: pub.document:bytesToDocument
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2040
 - serviceName: pub.string:bytesToString
   packages:
   - name: WmPublic
