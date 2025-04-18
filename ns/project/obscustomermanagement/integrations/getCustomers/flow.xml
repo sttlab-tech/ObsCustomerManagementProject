@@ -454,9 +454,6 @@
 <MAPCOPY FROM="/party;4;0;project.obscustomermanagement.documenttypes:ObsParty/name;1;0" TO="/customers;4;0;project.obscustomermanagement.documenttypes:ObsCustomer/engagedParty;2;0/name;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/party;4;0;project.obscustomermanagement.documenttypes:ObsParty/existsDuring;2;0" TO="/customers;4;0;project.obscustomermanagement.documenttypes:ObsCustomer/engagedParty;2;0/existsDuring;2;0">
-</MAPCOPY>
-
 <MAPCOPY FROM="/party;4;0;project.obscustomermanagement.documenttypes:ObsParty/status;1;0" TO="/customers;4;0;project.obscustomermanagement.documenttypes:ObsCustomer/engagedParty;2;0/status;1;0">
 </MAPCOPY>
 
