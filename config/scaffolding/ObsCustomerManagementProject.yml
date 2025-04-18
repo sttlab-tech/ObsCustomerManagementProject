@@ -48,6 +48,10 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2040
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2040
 configurationVariables:
   ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.keyStore
   : ""
