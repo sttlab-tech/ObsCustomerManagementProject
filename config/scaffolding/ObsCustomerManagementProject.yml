@@ -7,8 +7,70 @@ packages:
   gitUrl: https://github.com/sttlab-tech
   gitUsername: sttlab-tech
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:sqlserver_ocp
+  packages:
+  - name: ObsCustomerManagementProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.obscustomermanagement.integrations:getCustomers
   packages:
   - name: ObsCustomerManagementProject
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.keyStore
+  : ""
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.trustStore
+  : ""
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionEnabled
+  : "false"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.databaseName
+  : frdb
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.portNumber
+  : "32228"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.user
+  : sa
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.serverName
+  : techzone.sttlab.eu
+  ? artConnection.ObsCustomerManagementProject.project.obscustomermanagement.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sqlserver_ocp.connectionSettings.password
+  : "{AES}M1eQ3ETXUuR98whgOwcRBA=="
