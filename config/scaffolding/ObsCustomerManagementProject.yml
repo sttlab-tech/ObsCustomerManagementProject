@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/sttlab-tech
   gitUsername: sttlab-tech
   gitBranch: main
+services:
+- serviceName: project.obscustomermanagement.integrations:getCustomers
+  packages:
+  - name: ObsCustomerManagementProject
+    version: "1.0"
